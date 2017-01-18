@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgba(0, 188, 212, 0.25);
+}
+
+.container {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 960px;
+	margin-top: 15vh;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel-cont {
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	
+	border: 5px solid grey;
+    border-radius: 13px;
+    box-shadow: 5px 5px 28px black;
+}
+
+.carousel-cont ul {
+	padding: 0;
+	margin: 0;
+	width: 2000px;
+
+}
+
+.carousel-cont ul li {
+	list-style: none;
+	float: left;
+	width: 400px;
+	height: 300px;
+
+
+}
+
+.carousel-cont ul li img {
+	height: inherit;
+    width: inherit;
+}
