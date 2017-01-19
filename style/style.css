@@ -19,10 +19,38 @@ body {
 	width: 400px;
 	height: 300px;
 	overflow: hidden;
+	position: relative;
 	
 	border: 5px solid grey;
     border-radius: 13px;
     box-shadow: 5px 5px 28px black;
+}
+
+.carousel-cont::before, .carousel-cont::after {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background-color: grey;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-cont::before {
+	content: "<";
+	left: 0;
+	background: linear-gradient(to right, rgba(156, 39, 176, 0.8), transparent);
+}
+
+.carousel-cont::after {
+	content: ">";
+    right: 0;
+    background: linear-gradient(to right, transparent, rgba(156, 39, 176, 0.8));
 }
 
 .carousel-cont ul {
