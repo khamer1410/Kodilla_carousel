@@ -17,7 +17,7 @@ $(function(){
 
 })
 
-var carouselMenuLeft = $('.carousel-cont::before');
+var carouselMenuLeft = $('.carousel-cont');
 
 //Dorób po bokach przyciski służące do zmiany slajdu.
 
